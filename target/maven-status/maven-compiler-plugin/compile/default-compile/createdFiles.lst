@@ -1,0 +1,10 @@
+cn/qc/archive/BatchController.class
+cn/qc/archive/Workbench.class
+cn/qc/archive/LocalAccess.class
+cn/qc/archive/OfficeService.class
+cn/qc/archive/BatchService.class
+cn/qc/archive/AuditService$1.class
+cn/qc/archive/ExportService.class
+cn/qc/archive/AuditService.class
+cn/qc/archive/BatchStore.class
+cn/qc/archive/AuditService$Rule.class

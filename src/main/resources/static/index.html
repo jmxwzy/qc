@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>一户一档 · 核查工作台</title>
+<link rel="stylesheet" href="/style.css">
+<script defer src="/app.js"></script>
+</head>
+<body>
+<header class="mast"><div class="brand"><span class="brandmark" aria-hidden="true"></span><strong>一户一档</strong><span class="divider"></span><span>核查工作台</span></div><span class="local"><i></i>本机运行</span></header>
+<main>
+<div id="notice" role="status" aria-live="polite" hidden></div>
+<section class="pagehead"><div><h1>档案核查</h1><p id="batchInfo">选择一个核查批次，或从虚拟样例开始。</p></div><div class="actions"><button id="reports" hidden>批量导出报告初稿</button><button id="export" hidden>导出核查清单</button><button class="primary" id="create"><span aria-hidden="true">＋</span> 新建批次</button></div></section>
+<div class="batchbar"><label for="batch">当前批次</label><select id="batch"><option value="">暂无批次</option></select><span id="totals"></span></div>
+<section id="empty" class="empty"><div class="bigfolder" aria-hidden="true"></div><h2>开始核查第一批档案</h2><p>准备档案总目录、核查清单、用户台账和报告模板，或用虚拟档案试查。</p><div class="actions"><button id="example" class="primary">用演示数据开始</button><button id="custom">使用本机档案</button></div></section>
+<div class="workspace" id="workspace" hidden>
+<aside class="roster"><div class="rosterhead"><h2>用户目录</h2><span id="count" class="number"></span></div><label class="sr" for="filter">查找用户</label><input id="filter" type="search" placeholder="查找用户名称"><nav id="users" aria-label="核查用户"></nav></aside>
+<section class="record" aria-label="单户核查"><header class="recordhead"><div><div class="path" id="directory"></div><h2 id="userName"></h2></div><button id="report">导出报告初稿</button></header>
+<nav class="tabs" aria-label="核查内容"><button data-tab="issues" class="active" aria-pressed="true">异常复核</button><button data-tab="capacity" aria-pressed="false">容量核对</button><button data-tab="files" aria-pressed="false">档案清单</button></nav>
+<div id="panel"></div>
+<div class="savebar"><span id="dirty"></span><button class="primary" id="save">保存本户复核</button></div>
+</section></div>
+</main>
+<dialog id="dialog"><form id="form">
+<div class="modalhead"><h2>新建核查批次</h2><button type="button" aria-label="关闭" id="close" class="iconbtn">×</button></div>
+<fieldset class="modes"><legend class="sr">数据来源</legend><label><input type="radio" name="mode" value="real" checked>本机档案</label><label><input type="radio" name="mode" value="demo">虚拟样例</label></fieldset>
+<p id="modeTip"></p><div id="paths"><label>档案总目录<input name="root" placeholder="粘贴包含各户文件夹的绝对路径" autocomplete="off"></label><label>核查规则清单（TSV）<input name="rules" placeholder="核查清单文件的绝对路径" autocomplete="off"></label><label>用户主台账（XLSX）<input name="ledger" placeholder="Excel 台账文件的绝对路径" autocomplete="off"></label><label>报告模板（DOCX）<input name="template" placeholder="Word 模板文件的绝对路径" autocomplete="off"></label></div>
+<p id="formerror" class="errortext" role="alert"></p><div class="actions"><button type="button" id="cancel">取消</button><button type="submit" class="primary" id="submit">创建并巡检</button></div>
+</form></dialog>
+</body></html>

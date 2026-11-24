@@ -1,0 +1,146 @@
+{
+  "id" : "e4b74078-6b11-4dc1-91c3-c9b720b20504",
+  "created" : "2026-11-24T19:26:03.166886+08:00",
+  "root" : "/Users/wangzhenyu/Documents/Codex/2026-11-23/https-share-gemini-google-ixuvvgfzlfxw-https/outputs/archive-workbench/demo/档案",
+  "demo" : true,
+  "users" : [ {
+    "name" : "演示甲厂（虚构）",
+    "directory" : "演示甲厂（虚构）",
+    "issues" : [ ],
+    "files" : [ "演示甲厂（虚构）/01_一户一案.docx", "演示甲厂（虚构）/02_自备电源明细.txt", "演示甲厂（虚构）/03_隐患整改单_记录1.txt", "演示甲厂（虚构）/03_隐患整改单_记录2.txt" ],
+    "items" : [ {
+      "code" : "01",
+      "name" : "一户一案",
+      "applicability" : "必备",
+      "multiplicity" : "单份",
+      "paths" : [ "演示甲厂（虚构）/01_一户一案.docx" ]
+    }, {
+      "code" : "02",
+      "name" : "自备电源明细",
+      "applicability" : "必备",
+      "multiplicity" : "单份",
+      "paths" : [ "演示甲厂（虚构）/02_自备电源明细.txt" ]
+    }, {
+      "code" : "03",
+      "name" : "隐患整改单",
+      "applicability" : "条件",
+      "multiplicity" : "多份",
+      "paths" : [ "演示甲厂（虚构）/03_隐患整改单_记录1.txt", "演示甲厂（虚构）/03_隐患整改单_记录2.txt" ]
+    } ],
+    "ledgerValue" : "500",
+    "ledgerUnit" : "kW",
+    "ledgerSource" : "台账.xlsx · 演示用户台账 第 2 行 · B2",
+    "ledgerReason" : "",
+    "onLedger" : true,
+    "planHashes" : {
+      "演示甲厂（虚构）/01_一户一案.docx" : "1569ba173a1ba420c0baebfa5b7b3c4031d57a70bd795d8743a6d0eca0dfcbe0"
+    },
+    "review" : {
+      "version" : 0,
+      "plan" : "",
+      "value" : "",
+      "unit" : "",
+      "note" : "",
+      "decisions" : { },
+      "associations" : { }
+    }
+  }, {
+    "name" : "演示乙厂（虚构）",
+    "directory" : "演示乙厂（虚构）",
+    "issues" : [ {
+      "id" : "a1262cf5-9482-30cf-a630-a1c191d269db",
+      "type" : "文件未归类",
+      "item" : "",
+      "detail" : "文件名未唯一匹配清单。请查看原件并核定档案项。",
+      "path" : "演示乙厂（虚构）/A17.txt"
+    }, {
+      "id" : "b012f8d6-4f56-3945-98d4-7f902376884a",
+      "type" : "未匹配到必备项",
+      "item" : "自备电源明细",
+      "detail" : "请确认实际缺件或命名未匹配。",
+      "path" : "演示乙厂（虚构）"
+    } ],
+    "files" : [ "演示乙厂（虚构）/01_一户一案.docx", "演示乙厂（虚构）/03_隐患整改单_记录1.txt", "演示乙厂（虚构）/A17.txt" ],
+    "items" : [ {
+      "code" : "01",
+      "name" : "一户一案",
+      "applicability" : "必备",
+      "multiplicity" : "单份",
+      "paths" : [ "演示乙厂（虚构）/01_一户一案.docx" ]
+    }, {
+      "code" : "02",
+      "name" : "自备电源明细",
+      "applicability" : "必备",
+      "multiplicity" : "单份",
+      "paths" : [ ]
+    }, {
+      "code" : "03",
+      "name" : "隐患整改单",
+      "applicability" : "条件",
+      "multiplicity" : "多份",
+      "paths" : [ "演示乙厂（虚构）/03_隐患整改单_记录1.txt" ]
+    } ],
+    "ledgerValue" : "630",
+    "ledgerUnit" : "kVA",
+    "ledgerSource" : "台账.xlsx · 演示用户台账 第 3 行 · B3",
+    "ledgerReason" : "",
+    "onLedger" : true,
+    "planHashes" : {
+      "演示乙厂（虚构）/01_一户一案.docx" : "d1cf76386de1c25683011f963e88d6f5540cc21a389c122dc07119744b5ce439"
+    },
+    "review" : {
+      "version" : 0,
+      "plan" : "",
+      "value" : "",
+      "unit" : "",
+      "note" : "",
+      "decisions" : { },
+      "associations" : { }
+    }
+  }, {
+    "name" : "演示丙厂（虚构）",
+    "directory" : "",
+    "issues" : [ {
+      "id" : "564bc6a8-a0a2-33e4-bbbc-4499bf11f2ab",
+      "type" : "未匹配到户目录",
+      "item" : "",
+      "detail" : "核实用户是否使用简称，或尚未建立档案目录。",
+      "path" : ""
+    } ],
+    "files" : [ ],
+    "items" : [ {
+      "code" : "01",
+      "name" : "一户一案",
+      "applicability" : "必备",
+      "multiplicity" : "单份",
+      "paths" : [ ]
+    }, {
+      "code" : "02",
+      "name" : "自备电源明细",
+      "applicability" : "必备",
+      "multiplicity" : "单份",
+      "paths" : [ ]
+    }, {
+      "code" : "03",
+      "name" : "隐患整改单",
+      "applicability" : "条件",
+      "multiplicity" : "多份",
+      "paths" : [ ]
+    } ],
+    "ledgerValue" : "200",
+    "ledgerUnit" : "kW",
+    "ledgerSource" : "台账.xlsx · 演示用户台账 第 4 行 · B4",
+    "ledgerReason" : "",
+    "onLedger" : true,
+    "planHashes" : { },
+    "review" : {
+      "version" : 0,
+      "plan" : "",
+      "value" : "",
+      "unit" : "",
+      "note" : "",
+      "decisions" : { },
+      "associations" : { }
+    }
+  } ]
+}
